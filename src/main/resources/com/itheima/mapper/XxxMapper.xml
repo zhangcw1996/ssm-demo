@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.SectionMapper">
+    <insert id="insertIllnesser">
+        insert into ill
+        (
+        id,
+        name,
+        gender,
+        age,
+        section_id
+        )
+        values
+         (
+         5,
+         #{name},
+         #{age},
+         #{gender},
+         #{sectionId}
+         )
+    </insert>
+
+</mapper>
